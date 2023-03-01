@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment form</title>
+    <style>
+        *{
+    box-sizing: border-box;
+}
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 15px 30px;
+    font-size: 17px;
+    padding: 8px;
+    ;
+}
+.container{
+    background-color: rgb(163, 218, 228);
+    padding: 5px 20px 5px 20px;
+    border: 3px solid rgb(28, 22, 117);
+    border-radius: 10px;
+
+}
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="date"],
+input[type="passward"],
+select,
+textarea{
+    width: 100%;
+    padding:12px;
+    border: 1px solid rgb(163, 89, 89);
+    border-radius: 5px;
+    margin: 10px;
+    
+}
+fieldset{
+    background-color: white;
+    border: 5px;
+}
+.mainheading{
+    text-align: center;
+
+}
+input[type="submit"]{
+    background-color: rgb(64, 138, 199);
+    color: white;
+    padding: 12px 20px;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    width:100%;
+
+}
+input[type="submit"]:hover{
+    background-color: rgb(28, 22, 117);
+}
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+    <form action="">
+        <h1 class="mainheading">Payment form</h1>
+        <hr>
+        <h2>contact information</h2>
+        <hr>
+        <p> Required field are followed my *</p>
+        <p>NAME: * <input type="text" name="name" required placeholder="Aniket Nigam"></p>
+        <fieldset>
+            <legend>Gender*</legend>
+        <p>
+            Male: <input type="radio" name="gender" id="Male" required>
+            Female: <input type="radio" name="gender" id="Femder"required>
+        </p>
+        </fieldset>
+        <P>ADDRESS: <textarea name="address" id="address" cols="100" rows="8" placeholder="uttar pradesh"></textarea>
+        <p>Email:* <input type="email" name="email" id="email"required placeholder="xyx@gmail.com"></p>
+        <p>Pincode:* <input type="number" name="pincode" id="pincode"required></p>
+        <p>Contact no.: <input type="number" name="contact no." id="contact no." placeholder="xxxxxxxxxxxx"></p>
+        <hr>
+        <h2>Payment information</h2>
+        <p>card type:* <select name="card_type" id="card_type" required >
+            <option value="">---select a card type---</option>
+            <option value="paytm">paytm</option>
+            <option value="visa">visa</option>
+            <option value="paypal">paypal</option>
+        </select>
+        <p>
+            card number:* <input type="number" name="card number" id="card number" required>
+        </p>
+        <p>
+            expiration date:* <input type="date" name="exp_date" id="exp_date" required>
+        </p>
+        <p>
+            cvv:* <input type="password" name="cvv" id="cvv"required>
+        </p>
+        <input type="submit" value="pay now">
+        <hr>
+        <hr>
+        <hr>
+    </div>
+    
